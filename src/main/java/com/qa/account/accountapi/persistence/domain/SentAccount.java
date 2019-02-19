@@ -1,21 +1,17 @@
 package com.qa.account.accountapi.persistence.domain;
 
 public class SentAccount {
-	
+
 	private Long accountId;
-	
 	private String fullName;
-	
 	private String email;
-	
 	private Boolean playing;
-	
+
 	public SentAccount() {
-		
+		//Empty constructor
 	}
 
 	public SentAccount(Long accountId, String fullName, String email, Boolean playing) {
-		super();
 		this.accountId = accountId;
 		this.fullName = fullName;
 		this.email = email;
@@ -53,6 +49,5 @@ public class SentAccount {
 	public void setPlaying(Boolean playing) {
 		this.playing = playing;
 	}
-	
-	
+
 }

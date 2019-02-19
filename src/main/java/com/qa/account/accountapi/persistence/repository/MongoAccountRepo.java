@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.qa.account.accountapi.persistence.domain.SentAccount;
 
 @Repository
-public interface MongoAccountRepo extends MongoRepository<SentAccount, Long>{
+public interface MongoAccountRepo extends MongoRepository<SentAccount, Long> {
 
 }
