@@ -13,7 +13,7 @@ public class AccountReceiver {
 	@Autowired
 	private MongoAccountRepo repo;
 
-	@JmsListener(destination = "AccountQueue", containerFactory = "myFactory")
+	@JmsListener(destination = "${activemq.queue.name}", containerFactory = "${container.factory.name}")
 	public void receiveMessage(SentAccount sentAccount) {
 		repo.save(sentAccount);
 	}
