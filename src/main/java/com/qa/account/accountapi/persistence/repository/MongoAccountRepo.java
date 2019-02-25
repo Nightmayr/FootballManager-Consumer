@@ -8,4 +8,6 @@ import com.qa.account.accountapi.persistence.domain.SentAccount;
 @Repository
 public interface MongoAccountRepo extends MongoRepository<SentAccount, Long> {
 
+    SentAccount findTopByOrderByAccountIdDesc();
+
 }
