@@ -8,3 +8,4 @@ bin
 .scannerwork
 sonar-project.properties
 .vscode
+.DS_Store
